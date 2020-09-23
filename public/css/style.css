@@ -1,0 +1,258 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 95vh;
+}
+.wave {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -1;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7rem;
+  padding: 0 2rem;
+  height: 100%;
+}
+.img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.img img {
+  width: 500px;
+}
+.form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+.login img {
+  height: 100px;
+}
+.login div h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-size: 2.9rem;
+  color: #333;
+}
+.login .input-div {
+  position: relative;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  padding: 5px 0;
+  border-bottom-color: #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+}
+#input-div {
+  margin: 15px 0;
+}
+#input-div2 {
+  margin: 5px 0;
+}
+.i {
+  color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-div.focus > .i > i {
+  color: #38d39f;
+}
+.input-div > div > input {
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0 0.6rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.input-div.focus > div > h5 {
+  top: -5px;
+  font-size: 15px;
+}
+.input-div:focus {
+  border-bottom-color: #38d39f;
+}
+.input-div2 > div ~ a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+.input-div > div > h5 {
+  position: relative;
+  top: 10px;
+  text-align: left;
+  left: 0;
+  padding: 0 9px;
+  color: #8a8989;
+  font-family: "Open Sans", sans-serif;
+}
+.a {
+  display: flex;
+  justify-content: flex-end;
+}
+.a a {
+  text-decoration: none;
+  color: #8a8989;
+  font-size: 0.65rem;
+  font-weight: bold;
+}
+.submit1 {
+  background: #38d39f;
+  border-radius: 100px;
+  height: 35px;
+  justify-content: center;
+  display: flex;
+  margin: 10px 0;
+  width: 120px;
+}
+.btnSubmit {
+  border: none;
+  background: none;
+  color: white;
+  font-weight: bold;
+  outline: none;
+}
+.btnSubmit:focus{
+  outline: none
+}
+#chatForm {
+  display: none;
+  flex-grow: 1;
+  margin: 1rem 0;
+}
+.box-online {
+  flex-grow: 1;
+  box-shadow: 0 0 5px 0px #b3acac;
+  padding: 1rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+  border-radius: 8px;
+  height: min-content;
+}
+.title {
+  color: #38d39f;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1.5px solid #38d39f;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.box-chat {
+  flex-grow: 3;
+  background-color: #9eccbb;
+  border-radius: 8px;
+  flex-direction: column;
+}
+.nameChat {
+  flex-direction: row;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem 2rem;
+  color: white;
+}
+.btnLogout {
+  background: #2bc891;
+  border: none;
+  width: 4%;
+  border-radius: 20px;
+  margin-left: 5%;
+  color: #f5f5f5;
+  font-weight: bold;
+}
+#contentChat {
+  height: 81.7%;
+}
+#isTyping {
+  height: 5%;
+}
+#textInput {
+  width: 50%;
+  border: none;
+  box-shadow: 0 0 black;
+  box-shadow: 0 0 5px 0px #b3acac;
+  border-radius: 10px;
+  height: 5vh;
+  outline: none;
+  padding: 0px 1rem;
+}
+.btnSend {
+  border: none;
+  box-shadow: 0 0 5px 0px #b3acac;
+  background: #2bc891;
+  color: white;
+  outline: none;
+  width: 5%;
+  height: 5vh;
+  border-radius: 10px;
+  width: max-content;
+  padding: 0 0.6rem;
+}
+.btnSend:focus {
+  outline: none;
+}
+#userOnline {
+  width: 80%;
+}
+.arrUser {
+  padding-left: 2rem;
+}
+.arrUser:hover {
+  background-color: #9eccbb;
+  border-radius: 10px;
+  color: white;
+}
+.text {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 2rem;
+  /* background-color: white; */
+  /* width: max-content; */
+  border-radius: 10px;
+  align-items: center;
+}
+.textOthers {
+  padding: 0 2rem;
+}
+.textP {
+  background-color: #2bc891;
+}
+.textP-Others {
+  background-color: white;
+}
+
+.textP,
+.textP-Others {
+  width: max-content;
+  padding: 3px 1rem;
+  border-radius: 20px;
+  color: #333;
+}
+.modal-body {
+  border: none;
+}
+.modal-body:focus {
+  outline: none !important;
+}
